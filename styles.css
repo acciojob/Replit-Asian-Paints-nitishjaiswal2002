@@ -1,1 +1,22 @@
 /*  your css code here. If applicable */
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls label, .controls input, .controls button {
+  margin-right: 10px;
+}
