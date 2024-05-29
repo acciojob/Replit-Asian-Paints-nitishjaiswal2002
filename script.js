@@ -27,8 +27,12 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Add event listener for Change Color button
-  changeButton.addEventListener('click', changeColor);
+  if (changeButton) {
+    changeButton.addEventListener('click', changeColor);
+  }
 
   // Add event listener for Reset button
-  resetButton.addEventListener('click', resetColors);
+  if (resetButton) {
+    resetButton.addEventListener('click', resetColors);
+  }
 });
